@@ -1,0 +1,218 @@
+/**
+ * @CSS3
+ * @see http://maujor.com/tutorial/css3-@font-face.php
+ */
+@font-face {
+  font-family: 'Bauhaus';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../lib/fonts/Bauhaus.eot");
+  src: url("../lib/fonts/Bauhaus.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Bauhaus Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: url("../lib/fonts/Bauhaus93.eot");
+  src: local('Bauhaus93'), local('Bauhaus 93'), url('../lib/fonts/Bauhaus93.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../lib/fonts/Calibri.eot");
+  src: local('Calibri'), url('../lib/fonts/Calibri.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Calibri Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: url("../lib/fonts/Calibri-bold.eot");
+  src: local('Calibri'), local('Calibri bold'), url('../lib/fonts/Calibri-bold.ttf') format('truetype');
+}
+
+body{
+	
+	background: #FFFFFF url('../images/background.jpg') no-repeat center top;
+	font-family: Calibri, Helvetica, Arial, sans-serif;
+	font-size: 12pt;
+	padding: 0px;
+}
+/*
+	DEBUG
+*/
+/*div{
+	border: dotted silver 1px;
+}*/
+div#wrapper{
+	width: 1018px;
+	height: 600px;
+	clear: both;
+}
+div#topo{
+	background: transparent url('../images/topo.png')  no-repeat scroll left;
+	min-height: 68px;
+	margin-top: 0px;
+}
+div#topo h1{
+	color: #FFFFFF;
+	text-shadow: #333333 0px 1px 0px;
+	font-size: 1.02em; 
+	font-family: Bauhaus, Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 0px;
+	line-height: 8px;
+}
+div#topo p{
+	color: #FFFFFF;
+	text-shadow: #333333 0px 1px 0px;
+	font-size: 0.5em; 
+	font-family: Bauhaus, Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 0px;
+}
+
+div#slider{
+	background: transparent url('../images/corpo.png') no-repeat scroll left;
+	min-height: 440px;
+	max-height: 446px;
+	overflow: hidden;
+	font-size:0.92em;
+}
+
+div#rodape{
+	background: transparent url('../images/rodape.png') no-repeat scroll left;
+	min-height: 80px;
+	margin-top: 0px;
+}
+
+div#rodape p{
+	font-size: 0.6em;
+}
+ul.navigation{
+	text-align:center;
+	height:8px;
+	width: 100%;
+	display:none;
+}
+ul.navigation li{
+	display: inline-block;
+	text-align: center;
+	margin-right: 30px;
+	
+}
+div#controles{
+	width:34px;
+	float: right;
+	margin-right: 65px;
+	margin-top: 150px;
+}
+img.scrollButtons{
+	width:33px;
+	height:73px;
+	display:block;
+	margin-left: 1px;
+	cursor: pointer;
+}
+div.panel{
+	height: 418px;
+	max-height: 420px;
+	width: 920px;
+}
+div.panel p, div.panel h2{
+	width: 900px;
+	display: block-inline;
+}
+div.containers{
+	margin-left: 30%;
+	display: block-inline;
+	width: 1018px;
+	min-width:1018px;
+	max-width: 1018px;
+	padding-left:40px;
+	overflow: hidden;
+}
+div.containers p{
+	max-width: 900px;
+	display: block-inline;
+}
+p.center{
+	text-align: center;
+}
+p.justify{
+	text-align: justify;
+}
+img.ilustracao{
+	width:140px;
+	height:150px;
+}
+img#botao_avancar:hover{
+	background: transparent url('../images/avancar_blue.png')no-repeat top left;
+}
+img#botao_voltar:hover{
+	background: transparent url('../images/voltar_blue.png')no-repeat top left;
+}
+img#botao_avancar{
+	background: transparent url('../images/avancar.png')no-repeat top left;
+}
+img#botao_voltar{
+	background: transparent url('../images/voltar.png')no-repeat top left;
+}
+div#rodape img.logotipos{
+	max-height: 75px;
+	height: 50px;
+	cursor: pointer;
+}
+div#rodape img.cps{
+	padding-top: 3px;
+	height: 25px;
+	vertical-align: top;
+}
+
+div#reposta.inativo img{
+	/* @see FILE: 'javascripts/game.js' */
+	background: transparent url('../images/globo2.png') no-repeat scroll left;
+}
+div.ativo img{
+	background: transparent url('../images/globo2.png') no-repeat scroll left;
+}
+
+
+
+li.draggable{
+	cursor: move;
+}
+
+
+#pergunta{
+	width: 342px;
+	height: 308px;
+	float:right;
+	display: block;
+	background: transparent url('../images/frame.png') no-repeat scroll left;
+}
+#pergunta p{
+	display: block;
+	width: 330px;
+	height: 300px;
+	margin-left: 8px;
+}
+#respostas{
+	float: left;
+	display: block;
+	width: 150px;
+	height: 350px;
+	margin-top: 0px;
+	
+}
+#respostas ul li{
+	background-color: yellow;
+	border: solid 1px #333;
+	list-style-type: none;
+	padding: 0px;
+	margin-left: -10px;
+}
+#resposta{
+	float: right;
+	margin-top: 100px;
+}

@@ -1,0 +1,41 @@
+#form1{
+	float:right;
+	margin-right:180px;
+	margin-top: 100px;
+}
+#ilustracao1{
+	float:right;	
+	margin-right: 200px;
+}
+#ilustracao2{
+	float:right;
+	width:226px;
+	height:300px;
+	margin-right:400px;
+}
+#form2, #form1{
+	display:inline;
+}
+#form1{
+	float: left;
+}
+
+
+.bauhaus{
+	font-family: Bauhaus;
+}
+.blue{
+	color: #4994AB;
+}
+.bauhaus_blue{
+	font-family: Bauhaus;
+	color: #4994AB;
+}
+.escondido{
+	display:none;
+}
+div#introducao p, div#conclusao p{
+	margin-left: 50px;
+	font-size: 13pt;
+	margin-top: 10px;
+}
